@@ -1,0 +1,13 @@
+```html
+<div class="flex flex-nowrap">
+  <div class="w-1/2 bg-gray-200 p-4 flex-shrink-0 overflow-x-auto">
+    <!-- Content 1 -->
+    <p>This is some long text that might cause overflow. This is some long text that might cause overflow. This is some long text that might cause overflow. This is some long text that might cause overflow.</p>
+  </div>
+  <div class="w-1/2 bg-gray-200 p-4 flex-shrink-0 overflow-x-auto">
+    <!-- Content 2 -->
+    <p>This is some more long text that might cause overflow. This is some more long text that might cause overflow. This is some more long text that might cause overflow. This is some more long text that might cause overflow.</p>
+  </div>
+</div>
+```
+This solution uses `flex-shrink-0` to prevent columns from shrinking and `overflow-x-auto` to add horizontal scrolling for handling overflowing content, thus keeping the layout intact.
